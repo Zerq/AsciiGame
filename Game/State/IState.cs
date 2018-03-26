@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Omnicatz.Console;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace Omnicatz.GameEngine.State
 {
-    public interface IGameState
+    public interface IState: IDisposable
     {
-        void Load();
-        void Unload();
         void Pause();
         void Resume();
-        void Loop();
+        void Update(GameTime time);
+        void Render(GameTime time, IConsole console);
     }
 }

@@ -4,7 +4,7 @@ using Omnicatz.Console;
 namespace Omnicatz.Console.Test
 {
     [TestClass]
-    public class UnitTest1
+    public class BufferConsoleTest
     {
         private BufferConsole setup() {
              var console = new BufferConsole(3, 3);
