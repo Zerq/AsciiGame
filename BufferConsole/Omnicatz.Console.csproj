@@ -45,7 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IConsole.cs" />
+    <Compile Include="AudioInput.cs" />
+    <Compile Include="ConsoleInput.cs" />
+    <Compile Include="IConsoleInput.cs" />
+    <Compile Include="IConsoleOutput.cs" />
+    <Compile Include="IAudioOutput.cs" />
     <Compile Include="Cell.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BufferConsole.cs" />

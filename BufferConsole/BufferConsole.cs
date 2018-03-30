@@ -4,7 +4,7 @@ using OriginalConsole = System.Console;
  
 namespace Omnicatz.Console
 {
-    public class BufferConsole : IConsole
+    public class ConsoleOutput : IConsoleOutput
     {
         public void Flush() {
             for (var x = 0; x < this.BufferWidth; x++){
@@ -27,7 +27,7 @@ namespace Omnicatz.Console
                 }
             }
         }
-        public BufferConsole(int w, int h) {
+        public ConsoleOutput(int w, int h) {
             this.Buffer = new Cell[w, h];
         }
 
@@ -73,20 +73,18 @@ namespace Omnicatz.Console
             }
         }
         public Cell[,] Buffer { get; set; }
-
-        public bool KeyAvailable => throw new NotImplementedException();
+        public int Indent { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public void Clear()
         {
             Buffer = new Cell[Buffer.GetLength(0), Buffer.GetLength(1)];
+            this.Indent = 0;
         }
-
         public void Reset() {
             this.cursorX = 0;
             this.cursorY = 0;
+            this.Indent = 0;
         }
-
-
         public void Print(string text) {
             foreach (char c in text.ToArray()) { Print(c); }
         }
@@ -120,44 +118,14 @@ namespace Omnicatz.Console
             if (this.CursorY + 1 < this.BufferHeight)
             {
                 this.cursorY++;
-                this.cursorX = 0;
+                this.cursorX = Indent;
             }
         }
-
         public void ResetColor()
         {
             this.Fore = ConsoleColor.White;
             this.Back = ConsoleColor.Black;
         }
 
-        public int Read()
-        {
-            return System.Console.Read();
-        }
-
-        public ConsoleKeyInfo ReadKey()
-        {
-            return System.Console.ReadKey();
-        }
-
-        public ConsoleKeyInfo ReadKey(bool intercept)
-        {
-            return System.Console.ReadKey(intercept);
-        }
-
-        public string ReadLine()
-        {
-           return System.Console.ReadLine();
-        }
-
-        public void Beep()
-        {
-              System.Console.Beep();
-        }
-
-        public void Beep(int frequency, int duration)
-        {
-            System.Console.Beep(frequency, duration);
-        }
     }
 }

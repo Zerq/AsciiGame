@@ -11,7 +11,7 @@ namespace Omnicatz.GameEngine.State
     {
         void Pause();
         void Resume();
-        void Update(GameTime time);
-        void Render(GameTime time, IConsole console);
+        void Update(GameTime time, IConsoleInput input);
+        void Render(GameTime time, IConsoleOutput console);
     }
 }

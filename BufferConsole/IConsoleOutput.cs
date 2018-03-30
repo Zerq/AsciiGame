@@ -2,7 +2,7 @@
 
 namespace Omnicatz.Console
 {
-    public interface IConsole
+    public interface IConsoleOutput
     {
         void Flush();
         Cell[,] Buffer { get; }
@@ -13,18 +13,9 @@ namespace Omnicatz.Console
         void BreakRow();
         int CursorX { get; set; }
         int CursorY { get; set; }
+        int Indent { get; set; }
         ConsoleColor Fore { get; set; }
         ConsoleColor Back { get; set; }
-        void Print(string text);
-        int Read();
-        ConsoleKeyInfo ReadKey();
-        ConsoleKeyInfo ReadKey(bool intercept);
-        string ReadLine();
-        void Beep();
-        void Beep(int frequency, int duration);
-        bool KeyAvailable { get; }
-        
+        void Print(string text);        
         }
- 
-
 }

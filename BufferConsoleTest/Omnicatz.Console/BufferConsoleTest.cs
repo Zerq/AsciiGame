@@ -6,8 +6,8 @@ namespace Omnicatz.Console.Test
     [TestClass]
     public class BufferConsoleTest
     {
-        private BufferConsole setup() {
-             var console = new BufferConsole(3, 3);
+        private ConsoleOutput setup() {
+             var console = new ConsoleOutput(3, 3);
             console.Print('a');
             console.Print('b');
             console.Print('c');
@@ -78,7 +78,7 @@ namespace Omnicatz.Console.Test
         [TestMethod]
         public void Omnnicatz_Console_RowBreak()
         {
-            var console = new BufferConsole(3, 5);
+            var console = new ConsoleOutput(3, 5);
             console.Print('@');
             console.BreakRow();
    
@@ -89,7 +89,7 @@ namespace Omnicatz.Console.Test
         [TestMethod]
         public void Omnnicatz_Console_Print_String()
         {
-            var console = new BufferConsole(10, 3);
+            var console = new ConsoleOutput(10, 3);
             console.Print("Bürklax");
             
             Assert.AreEqual('B', console.Buffer[0, 0].Data);
@@ -107,7 +107,7 @@ namespace Omnicatz.Console.Test
         [TestMethod]
         public void Omnnicatz_Console_Print_String_colors()
         {
-            var console = new BufferConsole(10, 3);
+            var console = new ConsoleOutput(10, 3);
             console.Fore = ConsoleColor.Blue;
             console.Back = ConsoleColor.DarkGray;
             console.Print("Bürklax");

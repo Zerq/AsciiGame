@@ -8,8 +8,8 @@ namespace Omnicatz.GameEngine
     {
         static void Main(string[] args)
         {
-
-            BufferConsole console = new BufferConsole(OriginalConsole.BufferWidth, 29);
+            ConsoleOutput console = new ConsoleOutput(OriginalConsole.BufferWidth, 29);
+            IConsoleInput input = new ConsoleInput();
             int i = 0;
             Random random;
             while (true)
@@ -38,7 +38,7 @@ namespace Omnicatz.GameEngine
                 console.Print("Burklax");
 
                 console.Flush();
-                console.Read();
+                input.Read();
             }
         }
     }

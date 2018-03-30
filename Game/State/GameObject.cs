@@ -18,14 +18,14 @@ namespace Omnicatz.GameEngine.State
         public ICollection<IBehaviour> Behaviours { get; private set; } = new List<IBehaviour>();
 
       
-        public void Update(GameTime time) {
+        public void Update(GameTime time, IConsoleInput input) {
             var updatables = this.Behaviours.Where(n => n.GetType().IsAssignableFrom(typeof(IUpdatable))).Cast<IUpdatable>();
             foreach (var updater in updatables) {
-                updater.Update(time);
+                updater.Update(time, input);
             }
         }
 
-        public void Render(GameTime time, IConsole console)
+        public void Render(GameTime time, IConsoleOutput console)
         {
             var updatables = this.Behaviours.Where(n => n.GetType().IsAssignableFrom(typeof(IRenderable))).Cast<IRenderable>();
             foreach (var renderer in updatables)

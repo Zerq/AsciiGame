@@ -26,7 +26,7 @@ namespace Omnicatz.GameEngine.State
             }
         }
 
-        public void Render(GameTime time, IConsole console)
+        public void Render(GameTime time, IConsoleOutput console)
         {
             foreach (var item in Components)
             {
@@ -42,11 +42,11 @@ namespace Omnicatz.GameEngine.State
             }
         }
  
-        public void Update(GameTime time)
+        public void Update(GameTime time, IConsoleInput input)
         {
             foreach (var item in Components)
             {
-                item.Update(time);
+                item.Update(time, input);
             }
         }      
     }

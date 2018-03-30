@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omnicatz.Console", "BufferC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omnicatz.Console.Test", "BufferConsoleTest\Omnicatz.Console.Test.csproj", "{D957099B-ABDC-485D-9C6C-BA5D2FC801E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakura Blue", "Sakura Blue\Sakura Blue.csproj", "{ECDA1E4A-1629-4193-A6A1-EBA7833CDFDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D957099B-ABDC-485D-9C6C-BA5D2FC801E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D957099B-ABDC-485D-9C6C-BA5D2FC801E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D957099B-ABDC-485D-9C6C-BA5D2FC801E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECDA1E4A-1629-4193-A6A1-EBA7833CDFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECDA1E4A-1629-4193-A6A1-EBA7833CDFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECDA1E4A-1629-4193-A6A1-EBA7833CDFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECDA1E4A-1629-4193-A6A1-EBA7833CDFDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
