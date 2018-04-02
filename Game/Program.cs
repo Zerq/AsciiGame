@@ -22,10 +22,8 @@ namespace Omnicatz.GameEngine
                 {
                     for (var x = 0; x < console.BufferWidth; x++)
                     {
-
                         console.Fore = (ConsoleColor)random.Next(16);
                         console.Back = (ConsoleColor)random.Next(16);
-
                         console.Print('#');
                     }
 

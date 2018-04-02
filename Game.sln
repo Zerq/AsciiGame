@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Omnicatz.Console.Test", "Bu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sakura Blue", "Sakura Blue\Sakura Blue.csproj", "{ECDA1E4A-1629-4193-A6A1-EBA7833CDFDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSConsle", "TSConsle\TSConsle.csproj", "{389FB3C7-A1E1-4A36-8527-E6576FF45BBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{ECDA1E4A-1629-4193-A6A1-EBA7833CDFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECDA1E4A-1629-4193-A6A1-EBA7833CDFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECDA1E4A-1629-4193-A6A1-EBA7833CDFDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{389FB3C7-A1E1-4A36-8527-E6576FF45BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{389FB3C7-A1E1-4A36-8527-E6576FF45BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{389FB3C7-A1E1-4A36-8527-E6576FF45BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{389FB3C7-A1E1-4A36-8527-E6576FF45BBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

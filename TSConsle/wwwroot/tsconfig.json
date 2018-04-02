@@ -1,0 +1,17 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es2017",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "allowJs": true
+  },
+ 
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "qunit": "2.6.0"
+  },
+  "devDependencies": {
+  "@types/qunit": "2.5.0"
+  }
+}

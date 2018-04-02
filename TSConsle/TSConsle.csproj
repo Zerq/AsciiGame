@@ -1,0 +1,86 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\ColorTest.ts" />
+    <Content Remove="wwwroot\Console\AudioOutput.ts" />
+    <Content Remove="wwwroot\Console\Cell.ts" />
+    <Content Remove="wwwroot\Console\Color.ts" />
+    <Content Remove="wwwroot\Console\ConsoleKeyInfo.ts" />
+    <Content Remove="wwwroot\Console\ConsoleOutput.ts" />
+    <Content Remove="wwwroot\Console\IAudioOutput.ts" />
+    <Content Remove="wwwroot\Console\IConsoleInput.ts" />
+    <Content Remove="wwwroot\Console\IConsoleOutput.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\font\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\font\AUTHORS.txt" />
+    <None Include="wwwroot\font\CONTRIBUTING.md" />
+    <None Include="wwwroot\font\CONTRIBUTORS.txt" />
+    <None Include="wwwroot\font\fonts\SpaceMono-Bold.ttf" />
+    <None Include="wwwroot\font\fonts\SpaceMono-BoldItalic.ttf" />
+    <None Include="wwwroot\font\fonts\SpaceMono-Italic.ttf" />
+    <None Include="wwwroot\font\fonts\SpaceMono-Regular.ttf" />
+    <None Include="wwwroot\font\LICENSE.txt" />
+    <None Include="wwwroot\font\OFL.txt" />
+    <None Include="wwwroot\font\README.md" />
+    <None Include="wwwroot\font\sources\FontMenuNameDB" />
+    <None Include="wwwroot\font\sources\Italics\Bold Italic\current.fpr" />
+    <None Include="wwwroot\font\sources\Italics\Bold Italic\features" />
+    <None Include="wwwroot\font\sources\Italics\Bold Italic\fontinfo" />
+    <None Include="wwwroot\font\sources\Italics\Bold Italic\GlyphOrderAndAliasDB" />
+    <None Include="wwwroot\font\sources\Italics\Bold Italic\Space-Mono-Bold-Italic-NH.ttf" />
+    <None Include="wwwroot\font\sources\Italics\Bold Italic\Space-Mono-Bold-Italic-source.ttf" />
+    <None Include="wwwroot\font\sources\Italics\Bold Italic\Space-Mono-Bold-Italic.ttf" />
+    <None Include="wwwroot\font\sources\Italics\Bold Italic\Space-Mono-Bold-Italic.vfb" />
+    <None Include="wwwroot\font\sources\Italics\Bold Italic\Space-Mono-Bold-Italic_QUADRATIC.vfb" />
+    <None Include="wwwroot\font\sources\Italics\Regular Italic\current.fpr" />
+    <None Include="wwwroot\font\sources\Italics\Regular Italic\features" />
+    <None Include="wwwroot\font\sources\Italics\Regular Italic\fontinfo" />
+    <None Include="wwwroot\font\sources\Italics\Regular Italic\GlyphOrderAndAliasDB" />
+    <None Include="wwwroot\font\sources\Italics\Regular Italic\Space-Mono-Regular-Italic-NH.ttf" />
+    <None Include="wwwroot\font\sources\Italics\Regular Italic\Space-Mono-Regular-Italic-source.ttf" />
+    <None Include="wwwroot\font\sources\Italics\Regular Italic\Space-Mono-Regular-Italic.ttf" />
+    <None Include="wwwroot\font\sources\Italics\Regular Italic\Space-Mono-Regular-Italic.vfb" />
+    <None Include="wwwroot\font\sources\Italics\Regular Italic\Space-Mono-Regular-Italic_QUADRATIC.vfb" />
+    <None Include="wwwroot\font\sources\Roman\Bold\current.fpr" />
+    <None Include="wwwroot\font\sources\Roman\Bold\features" />
+    <None Include="wwwroot\font\sources\Roman\Bold\fontinfo" />
+    <None Include="wwwroot\font\sources\Roman\Bold\GlyphOrderAndAliasDB" />
+    <None Include="wwwroot\font\sources\Roman\Bold\Space-Mono-Bold-NH.ttf" />
+    <None Include="wwwroot\font\sources\Roman\Bold\Space-Mono-Bold-source.ttf" />
+    <None Include="wwwroot\font\sources\Roman\Bold\Space-Mono-Bold.ttf" />
+    <None Include="wwwroot\font\sources\Roman\Bold\Space-Mono-Bold.vfb" />
+    <None Include="wwwroot\font\sources\Roman\Bold\Space-Mono-Bold_QUADRATIC.vfb" />
+    <None Include="wwwroot\font\sources\Roman\Regular\current.fpr" />
+    <None Include="wwwroot\font\sources\Roman\Regular\features" />
+    <None Include="wwwroot\font\sources\Roman\Regular\fontinfo" />
+    <None Include="wwwroot\font\sources\Roman\Regular\GlyphOrderAndAliasDB" />
+    <None Include="wwwroot\font\sources\Roman\Regular\Space-Mono-Regular-NH.ttf" />
+    <None Include="wwwroot\font\sources\Roman\Regular\Space-Mono-Regular-source.ttf" />
+    <None Include="wwwroot\font\sources\Roman\Regular\Space-Mono-Regular.ttf" />
+    <None Include="wwwroot\font\sources\Roman\Regular\Space-Mono-Regular.vfb" />
+    <None Include="wwwroot\font\sources\Roman\Regular\Space-Mono-Regular_QUADRATIC.vfb" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\ColorTest.ts" />
+    <TypeScriptCompile Include="wwwroot\Console\Color.ts" />
+    <TypeScriptCompile Include="wwwroot\Console\ConsoleKeyInfo.ts" />
+    <TypeScriptCompile Include="wwwroot\Console\AudioOutput.ts" />
+    <TypeScriptCompile Include="wwwroot\Console\IConsoleInput.ts" />
+    <TypeScriptCompile Include="wwwroot\Console\IAudioOutput.ts" />
+    <TypeScriptCompile Include="wwwroot\Console\Cell.ts" />
+    <TypeScriptCompile Include="wwwroot\Console\ConsoleOutput.ts" />
+    <TypeScriptCompile Include="wwwroot\Console\IConsoleOutput.ts" />
+  </ItemGroup>
+</Project>
